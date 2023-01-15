@@ -38,12 +38,30 @@ const on = (type, el, listener, all = false) => {
   }
 }
 
+
+const onscroll = (el, listener) => {
+  el.addEventListener('scroll', listener)
+}
+
 var github = document.getElementById('content-github');
 var linkedin = document.getElementById('content-linkedin');
 var whatsapp = document.getElementById('content-whatsapp');
 
 /* FUNCIONES */
 
+
+let backtotop = select('.back-top')
+  if (backtotop) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        backtotop.classList.add('active')
+      } else {
+        backtotop.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
 
 /* mouse events */
 github.onmouseover = function() {

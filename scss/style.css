@@ -9,6 +9,10 @@
     font-size: 300%;
 }
 
+.ftn-120 {
+    font-size: 120%;
+}
+
 .bg-skills {
   background-color: ghostwhite;
 }
@@ -39,6 +43,40 @@
         width: 30%;
     }
 }
+
+/* button back */
+.back-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  cursor: pointer;
+  background: green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  animation: backToTop 4s ease 0s infinite normal forwards;
+}
+
+.back-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-top:hover {
+  background: #0ed830;
+  color: #fff;
+}
+
+.back-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /* section general html*/
 section {
@@ -246,3 +284,33 @@ section {
     bottom: 0;
   }
   
+
+  /* Animations */
+  
+  @keyframes backToTop {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
