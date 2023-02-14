@@ -49,10 +49,10 @@ export const portafolioDataList = [
         category: 'bootstrap-projects'
     },
     {
-        name: 'shopFoodProject',
+        name: 'js project',
         img: 'https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Fdefault.jpg?alt=media&token=edcdcd01-fc44-4d61-97b6-3e9dc9429217',
-        project_url: 'https://mendoza727.github.io/shopProject/',
-        repository_url: 'https://github.com/Mendoza727/shopProject',
+        project_url: '',
+        repository_url: '',
         category: 'javascript-projects'
     },
     {
