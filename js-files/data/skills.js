@@ -35,14 +35,13 @@ export const skillsListArray = [
         img: "https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Flogos%2Fcss-logo.png?alt=media&token=a89a4e1d-46b4-4076-8177-e3f563e18eb5"
     },
     {
+        nameSkill: 'TailWind',
+        img: "https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Flogos%2Ftailwind.png?alt=media&token=644e7ce9-15f7-45b9-ae2a-5c6a6be11b33"
+    },
+    {
         //ANGULAR
         nameSkill: "Angular",  
         img: "https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Flogos%2FAngular_full_color_logo.svg?alt=media&token=b8894c2e-232e-409b-a656-4cc71f72e04a"
-    },
-    {
-        //REACT
-        nameSkill: "React",
-        img: "https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Flogos%2FReact-logo.png?alt=media&token=dc8d2729-3544-46ee-8996-23b949f1b605"
     },
     {
         //DATABASE
