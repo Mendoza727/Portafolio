@@ -63,6 +63,13 @@ export const portafolioDataList = [
         category: 'javascript-projects'
     },
     {
+        name: 'FastFood',
+        img: 'https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Fpreview%20projects%2FpreviewFastFood.png?alt=media&token=e6d8b448-d123-474c-8da4-5b849d740cec',
+        project_url: 'https://mendoza727.github.io/shopProject/#',
+        repository_url: 'https://github.com/Mendoza727/shopProject',
+        category: 'javascript-projects'
+    },
+    {
         name: 'js project',
         img: 'https://firebasestorage.googleapis.com/v0/b/portafoly-7c6b7.appspot.com/o/assets%2Fdefault.jpg?alt=media&token=edcdcd01-fc44-4d61-97b6-3e9dc9429217',
         project_url: '',
