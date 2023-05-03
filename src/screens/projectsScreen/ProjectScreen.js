@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ProjectsComponent = () => {
+export const ProjectScreen = () => {
   return (
     <div>ProjectsComponent</div>
   )

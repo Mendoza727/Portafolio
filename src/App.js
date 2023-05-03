@@ -1,14 +1,12 @@
 import { useLayoutEffect, useRef } from "react";
+
+import { AboutMeScreen } from '../src/screens/AboutMeScreen/AboutMeScreen';
+import { MeScreen } from '../src/screens/meScreen/MeScreen';
+import { CertificationEducationsScreen } from '../src/screens/CertificationsScreen/CertificationEducationsScreen';
+import { ExperienceDeveplomentScreen } from '../src/screens/ExperienceScreen/ExperienceDeveplomentScreen';
+import { ProjectScreen } from '../src/screens/projectsScreen/ProjectScreen';
+
 import { PushIn } from 'pushin';
-
-
-import { MeComponent } from "./screens/me/MeComponent";
-import { CertificationEducationsComponent } from "./screens/certifications/Certification-EducationsComponent";
-import { ExperienceDeveplomentComponent } from "./screens/experience/ExperienceDeveplomentComponent";
-import { ProjectsComponent } from "./screens/projects/ProjectsComponent";
-import { AboutMeComponent } from "./screens/about-me/AboutMeComponent";
-
-
 
 function App() {
   const pushInContainer = useRef();
@@ -22,11 +20,11 @@ function App() {
   return (
     <>
       <div ref={pushInContainer} className="pushin">
-        <div className="pushin-layer bg-wave"> <AboutMeComponent /> </div>
-        <div className="pushin-layer"> <MeComponent /> </div>
-        <div className="pushin-layer"> <CertificationEducationsComponent /> </div>
-        <div className="pushin-layer"> <ExperienceDeveplomentComponent /> </div>
-        <div className="pushin-layer"> <ProjectsComponent /> </div>
+        <div className="pushin-layer bg-wave"> <AboutMeScreen /> </div>
+        <div className="pushin-layer"> <MeScreen /> </div>
+        <div className="pushin-layer"> <CertificationEducationsScreen /> </div>
+        <div className="pushin-layer"> <ExperienceDeveplomentScreen /> </div>
+        <div className="pushin-layer"> <ProjectScreen /> </div>
       </div>
     </>
   )

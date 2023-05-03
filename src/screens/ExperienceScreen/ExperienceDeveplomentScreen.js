@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ExperienceDeveplomentComponent = () => {
+export const ExperienceDeveplomentScreen = () => {
   return (
     <div>ExperienceDeveplomentComponent</div>
   )

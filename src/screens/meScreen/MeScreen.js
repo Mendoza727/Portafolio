@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MeComponent = () => {
+export const MeScreen = () => {
   return (
     <div>MeComponent</div>
   )
