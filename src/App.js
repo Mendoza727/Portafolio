@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useLayoutEffect, useRef } from "react";
+import { PushIn } from 'pushin';
+
+
+import { MeComponent } from "./screens/me/MeComponent";
+import { CertificationEducationsComponent } from "./screens/certifications/Certification-EducationsComponent";
+import { ExperienceDeveplomentComponent } from "./screens/experience/ExperienceDeveplomentComponent";
+import { ProjectsComponent } from "./screens/projects/ProjectsComponent";
+import { AboutMeComponent } from "./screens/about-me/AboutMeComponent";
+
+
 
 function App() {
+  const pushInContainer = useRef();
+
+  useLayoutEffect(() => {
+    const pushIn = new PushIn(pushInContainer.current);
+    pushIn.start();
+    return () => pushIn.destroy();
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div ref={pushInContainer} className="pushin">
+        <div className="pushin-layer bg-wave"> <AboutMeComponent /> </div>
+        <div className="pushin-layer"> <MeComponent /> </div>
+        <div className="pushin-layer"> <CertificationEducationsComponent /> </div>
+        <div className="pushin-layer"> <ExperienceDeveplomentComponent /> </div>
+        <div className="pushin-layer"> <ProjectsComponent /> </div>
+      </div>
+    </>
+  )
 }
 
 export default App;
