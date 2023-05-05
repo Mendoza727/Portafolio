@@ -1,11 +1,11 @@
 import React from 'react';
-import LinkSocialsComponent from '../../components/LinkSocialsComponents';
+import {LinkSocialsComponent} from '../../components/LinkSocialsComponents';
+import { SideBarComponents } from '../../components/SideBarComponents';
 
 import InstagramLogo from "../../assets/icons/logo-instagram.svg";
 import WhatsappLogo from "../../assets/icons/logo-whatsapp.svg";
 import LinkedinLogo from "../../assets/icons/logo-linkedin.svg";
 import GithubLogo from "../../assets/icons/logo-github.svg";
-import { Header } from '../../headers/Header';
 
 const instagramLink = "https://www.instagram.com/eljuanitocs/";
 const whatsappLink = "https://api.whatsapp.com/send?phone=573208850851";
@@ -16,11 +16,9 @@ const githubLink = "https://github.com/Mendoza727";
 export const AboutMeScreen = () => {
   return (
     <>
-      {/* NavBar */}
-      <Header />
       <div className='w-full flex flex-row top-0'>
-        <div className='lg:w-40 lg:right-3/4 sm:right-0 '>
-          <div className="w-20 h-50 bg-white shadow-xl rounded-e-xl p-6 flex flex-col">
+        <div>
+          <div className="w-20 h-50 bg-white shadow-xl rounded-e-xl p-6 flex flex-col" id='sideBarLinks'>
 
             {/* intagram link */}
             <LinkSocialsComponent
@@ -56,11 +54,14 @@ export const AboutMeScreen = () => {
         </div>
 
         {/* texto inicio  */}
-        <div  className='w-full flex justify-center items-center'>
-                  <h2 className='text-bold text-white text-4xl'>Juan Camilo Mendoza Villegas</h2>
-                  <p></p>
+        <div className='w-full flex justify-center items-center lg:mx-22 flex-col'>
+          <h2 className='font-bold text-white lg:text-4xl xl:text-5xl md:text-2xl text-xl text-shadow'>Juan Camilo Mendoza Villegas</h2>
+          <p className='font-bold text-gray-800 text-lg'>Desarrollador Junior</p>
         </div>
 
+        <div id='sideBarLinksMobile'>
+          <SideBarComponents />
+        </div>
       </div>
     </>
   )

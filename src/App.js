@@ -7,6 +7,7 @@ import { ExperienceDeveplomentScreen } from '../src/screens/ExperienceScreen/Exp
 import { ProjectScreen } from '../src/screens/projectsScreen/ProjectScreen';
 
 import { PushIn } from 'pushin';
+import { ButtonLanguage, ButtonToolComponentScroll } from "./components/ButtonToolComponent";
 
 function App() {
   const pushInContainer = useRef();
@@ -21,11 +22,15 @@ function App() {
     <>
       <div ref={pushInContainer} className="pushin">
         <div className="pushin-layer bg-wave"> <AboutMeScreen /> </div>
-        <div className="pushin-layer"> <MeScreen /> </div>
+        <div className="pushin-layer bg-slate-500"> <MeScreen /> </div>
         <div className="pushin-layer"> <CertificationEducationsScreen /> </div>
         <div className="pushin-layer"> <ExperienceDeveplomentScreen /> </div>
         <div className="pushin-layer"> <ProjectScreen /> </div>
       </div>
+      <ButtonToolComponentScroll />
+      <footer className="bg-gray-300 h-full">
+          <div className="w-full h-full flex justify-center p-3">Creado con Amor</div>
+      </footer>
     </>
   )
 }
