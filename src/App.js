@@ -7,7 +7,8 @@ import { ExperienceDeveplomentScreen } from '../src/screens/ExperienceScreen/Exp
 import { ProjectScreen } from '../src/screens/projectsScreen/ProjectScreen';
 
 import { PushIn } from 'pushin';
-import { ButtonLanguage, ButtonToolComponentScroll } from "./components/ButtonToolComponent";
+import { ButtonToolComponentScroll } from "./components/ButtonToolComponent";
+import { SkillScreen } from "./screens/SkillScreen/SkillScreen";
 
 function App() {
   const pushInContainer = useRef();
@@ -24,6 +25,7 @@ function App() {
         <div className="pushin-layer bg-wave"> <AboutMeScreen /> </div>
         <div className="pushin-layer bg-slate-500"> <MeScreen /> </div>
         <div className="pushin-layer"> <CertificationEducationsScreen /> </div>
+        <div className="pushin-layer"> <SkillScreen /> </div>
         <div className="pushin-layer"> <ExperienceDeveplomentScreen /> </div>
         <div className="pushin-layer"> <ProjectScreen /> </div>
       </div>
