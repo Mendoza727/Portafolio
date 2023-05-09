@@ -16,7 +16,7 @@ const githubLink = "https://github.com/Mendoza727";
 export const SideBarComponents = () => {
   return (
     <>
-      <div className="fixed bottom-0 left-0 right-0 d-flex items-center justify-center">
+      <div className="fixed top-0 left-0 right-0 d-flex items-center justify-center">
         <div className="bg-white p-2 w-full h-24 flex justify-center flex-row gap-12">
 
           {/* instagram links */}

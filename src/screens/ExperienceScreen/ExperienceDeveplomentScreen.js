@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const ExperienceDeveplomentScreen = () => {
+export const ExperienceDeveplomentScreen = ({ infoExperience }) => {
+
   return (
-    <div>ExperienceDeveplomentComponent</div>
+    <>
+      { JSON.stringify(infoExperience, null, 2) }
+      <div>ExperienceDeveplomentComponent</div>
+    </>
   )
 }

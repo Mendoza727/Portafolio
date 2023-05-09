@@ -43,7 +43,7 @@ export const ButtonToolComponentScroll = () => {
 
 
     const scrollToTop = () => {
-        const scrollStep = -window.scrollY / 30; // Ajusta el valor para controlar la velocidad del desplazamiento
+        const scrollStep = -window.scrollY / 20; // Ajusta el valor para controlar la velocidad del desplazamiento
         const scrollInterval = setInterval(() => {
             if (window.scrollY !== 0) {
                 window.scrollBy(0, scrollStep);
