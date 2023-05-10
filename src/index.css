@@ -59,6 +59,9 @@ body.scroll-color-change::-webkit-scrollbar-thumb {
     text-shadow: 3px 3px 0 #101010, 5px 5px 0 #020101b5;    
 }
 
-
-
-  
+.filter {
+    position: 'fixed';
+    top: '10px';
+    right: '10px'; 
+    z-index: '1000';
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import requestPortafoly from '../api/requestsPortafolyApi';
 
-const RequestInfoPortafoly = () => {
+export const RequestInfoPortafoly = () => {
     const [isLoading, setIsLoading] = useState();
     const [infoPortafoly, setinfoPortafoly] = useState([]);
 
@@ -14,7 +14,7 @@ const RequestInfoPortafoly = () => {
                 const [infoEducation, infoExperience, infoSkills, infoProject] = await Promise.all([
                     requestPortafoly.get('/education'),
                     requestPortafoly.get('/experience'),
-                    requestPortafoly.get('/skills'),
+                    requestPortafoly.get('/skills', { headers: { 'Cache-Control': 'no-cache' } }),
                     requestPortafoly.get('/projects'),
                 ]);
 
@@ -43,6 +43,3 @@ const RequestInfoPortafoly = () => {
         isLoading,
     }
 }
-
-
-export default RequestInfoPortafoly;
